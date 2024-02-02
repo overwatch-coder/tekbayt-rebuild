@@ -18,14 +18,14 @@ const config: Config = {
           '50%': { content: 'url("/assets/hero_curve_active.png")', transform: 'translateX(100%)' },
         },
         marquee: {
-          '0%, 100%': { transform: 'translateX(-100%)' },
-          '50%': { transform: 'translateX(0)' },
-        }
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
         fade: 'fade 2s ease-in-out 1s infinite alternate',
         change: 'change 2s ease-in-out 1s infinite alternate',
-        marquee: 'marquee 50s ease-in-out -5s infinite reverse',
+        marquee: 'marquee 40s linear infinite',
       },
       content: {
         image: 'url("/assets/hero_curve_inactive.png")',

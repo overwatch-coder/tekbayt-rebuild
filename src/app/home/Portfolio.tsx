@@ -7,8 +7,8 @@ import React from "react";
 const Portfolio = () => {
   return (
     <section className="pt-10 pb-20 bg-blue-20 flex flex-col gap-10 items-center">
-      <h2 className="text-lg md:text-2xl font-semibold text-center">
-        Porfolio
+      <h2 className="text-xl md:text-2xl font-semibold text-center">
+        Portfolio
       </h2>
 
       <div className="flex flex-col gap-10 md:flex-row items-center md:justify-between md:gap-16 px-5 md:px-20">
