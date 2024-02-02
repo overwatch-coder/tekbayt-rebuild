@@ -32,6 +32,7 @@ const WhatWeOffer = () => {
             className="flex flex-col gap-10 md:gap-20 md:flex-row md:items-center md:justify-between bg-white odd:bg-blue-20 py-8 md:even:flex-row-reverse w-full px-5 md:px-20"
           >
             <Image
+              placeholder="blur"
               data-aos="fade-right"
               src={item.image}
               alt={item.name}

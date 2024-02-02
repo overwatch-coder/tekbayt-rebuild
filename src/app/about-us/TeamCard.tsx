@@ -15,6 +15,7 @@ const TeamCard = ({ item, idx }: TeamCardProps) => {
       className="col-span-1 rounded shadow-md hover:scale-105 transition-transform flex flex-col gap-5 items-center mx-auto max-w-md w-full p-10 bg-blue-20"
     >
       <Image
+        placeholder="blur"
         src={item.image}
         alt={item.name}
         width={700}

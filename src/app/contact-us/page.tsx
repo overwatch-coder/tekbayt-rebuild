@@ -23,6 +23,7 @@ const ContactUs = () => {
           that you want.
         </p>
         <Image
+          placeholder="blur"
           src={contact_us}
           width={500}
           height={500}

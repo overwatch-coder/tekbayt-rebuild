@@ -10,11 +10,12 @@ const TeamSlider = () => {
           className={`animate-marquee hover:cursor-pointer flex flex-nowrap items-center gap-5 justify-center`}
           style={{
             width: `${our_team_slide_images.length * (100 / 1)}%`,
-            height: 'auto'
+            height: "auto",
           }}
         >
           {our_team_slide_images.map((item, idx) => (
             <Image
+              placeholder="blur"
               key={idx}
               src={item}
               alt={`slider image ${idx + 1}`}

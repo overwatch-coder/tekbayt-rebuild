@@ -11,6 +11,7 @@ const Footer = () => {
         <div className="flex flex-col gap-8 items-center">
           <Link href={"/"}>
             <Image
+              placeholder="blur"
               src={footer_logo}
               width={150}
               height={150}
@@ -24,7 +25,10 @@ const Footer = () => {
           <div className="flex items-center gap-6">
             {socials.map((social, idx) => (
               <Link href={social.url} target="_blank" key={idx}>
-                <social.icon size={20} className="text-white/80 hover:text-white" />
+                <social.icon
+                  size={20}
+                  className="text-white/80 hover:text-white"
+                />
               </Link>
             ))}
           </div>
