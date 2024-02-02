@@ -25,7 +25,7 @@ const config: Config = {
       animation: {
         fade: 'fade 2s ease-in-out 1s infinite alternate',
         change: 'change 2s ease-in-out 1s infinite alternate',
-        marquee: 'marquee 40s linear 0s infinite reverse',
+        marquee: 'marquee 30s ease-in-out 0s infinite reverse',
       },
       content: {
         image: 'url("/assets/hero_curve_inactive.png")',
