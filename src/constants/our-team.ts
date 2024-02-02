@@ -23,9 +23,10 @@ import phina_slide from "@/assets/our_team/phina_slide.jpg";
 
 export const our_team: OurTeamType[] = [
     {
-        name: 'John Doe',
-        desc: 'A Product designer with 5 years experience working with ecommerce industries and fintech industries',
+        name: 'Oluwakayode Samuel Adeyemi',
+        desc: 'An enthusiastic, teachable, creative and young Front end developer (and Mechatronics Engineer). Aspiring web3 developer',
         image: kay
+        
     },
     {
         name: 'Blessing Odeke',
