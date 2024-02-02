@@ -11,7 +11,6 @@ const Footer = () => {
         <div className="flex flex-col gap-8 items-center">
           <Link href={"/"}>
             <Image
-              placeholder="blur"
               src={footer_logo}
               width={150}
               height={150}

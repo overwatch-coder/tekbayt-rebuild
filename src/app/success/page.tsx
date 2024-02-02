@@ -1,21 +1,31 @@
 "use client";
 import Button from "@/components/shared/Button";
-import { redirect, useRouter, useSearchParams } from "next/navigation";
+import { redirect, useSearchParams } from "next/navigation";
 import React, { Suspense, useEffect, useState } from "react";
 
-type SuccessMessageProps = {
-  setMessage: React.Dispatch<React.SetStateAction<string | null>>;
-  message: string | null;
-};
-
-function SuccessMessage({ message, setMessage }: SuccessMessageProps) {
+function SuccessMessage() {
   const searchParams = useSearchParams();
+  const [message, setMessage] = useState<string | null>(
+    searchParams.get("success")
+  );
 
   useEffect(() => {
-    setMessage(
-      searchParams.has("success") ? searchParams.get("success") : null
-    );
-  }, [searchParams, setMessage]);
+    if (!searchParams.has("success")) {
+      setMessage(null);
+      return redirect("/contact-us");
+    }
+
+    if (message !== "true") {
+      setTimeout(() => {
+        setMessage(null);
+        return redirect("/contact-us");
+      }, 5000);
+    }
+  }, [searchParams, setMessage, message]);
+
+  if (!message) {
+    return redirect("/contact-us");
+  }
 
   return (
     <section
@@ -46,28 +56,12 @@ function SuccessMessage({ message, setMessage }: SuccessMessageProps) {
 }
 
 const SuccessPage = () => {
-  const [message, setMessage] = useState<string | null>(null);
-  const router = useRouter();
-
-  useEffect(() => {
-    if (message !== "true") {
-      setTimeout(() => {
-        setMessage(null);
-        return redirect("/contact-us");
-      }, 5000);
-    }
-  }, [message, router]);
-
-  if (!message) {
-    return redirect("/contact-us");
-  }
-
   return (
     <>
       <title>Thank you for contacting us! | Tekabyt</title>
       <meta name="description" content="We will be in touch with you shortly" />
       <Suspense>
-        <SuccessMessage message={message} setMessage={setMessage} />
+        <SuccessMessage />
       </Suspense>
     </>
   );

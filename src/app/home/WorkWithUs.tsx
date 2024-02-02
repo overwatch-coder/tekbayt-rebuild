@@ -25,7 +25,6 @@ const WorkWithUs = () => {
             className="flex flex-col gap-6 rounded-lg shadow-md items-center bg-white px-5 py-10 w-full h-full md:w-[270px] md:h-[300px] col-span-1"
           >
             <Image
-              placeholder="blur"
               src={item.icon}
               alt={item.title}
               width={50}

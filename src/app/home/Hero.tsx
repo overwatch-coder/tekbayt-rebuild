@@ -32,7 +32,6 @@ const Hero = () => {
 
       <div data-aos="fade-left" className="relative">
         <Image
-          placeholder="blur"
           src={hero_image}
           alt="Tekbayt hero image"
           width={800}
@@ -42,7 +41,6 @@ const Hero = () => {
         />
 
         <Image
-          placeholder="blur"
           src={excellent}
           alt="Tekbayt hero floating image"
           className="absolute -bottom-3 left-0 animate-bounce object-contain"

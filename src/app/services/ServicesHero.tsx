@@ -19,7 +19,6 @@ const ServicesHero = () => {
       </div>
 
       <Image
-        placeholder="blur"
         data-aos="fade-left"
         src={services_hero_image}
         alt="Tekbayt services hero image"

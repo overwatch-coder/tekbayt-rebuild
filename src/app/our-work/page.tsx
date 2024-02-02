@@ -23,7 +23,6 @@ const OurWork = () => {
           <div data-aos="flip-down" key={idx} className="flex flex-col gap-5">
             <div className="col-span-1 w-full relative rounded shadow hover:scale-105 transition-transform">
               <Image
-                placeholder="blur"
                 src={item.image}
                 alt={item.name}
                 width={700}

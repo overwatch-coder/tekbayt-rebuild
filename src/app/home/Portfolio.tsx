@@ -21,7 +21,6 @@ const Portfolio = () => {
             className="flex flex-col items-center gap-5 rounded hover:scale-105 transition w-full h-full"
           >
             <Image
-              placeholder="blur"
               src={item.image}
               alt={item.name}
               width={1000}

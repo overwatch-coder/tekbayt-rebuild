@@ -24,7 +24,6 @@ const Header = () => {
         {/* Logo */}
         <Link href={"/"}>
           <Image
-            placeholder="blur"
             src={header_logo}
             width={40}
             height={40}
@@ -89,7 +88,6 @@ const Header = () => {
             className="flex items-start gap-5 w-fit"
           >
             <Image
-              placeholder="blur"
               src={navlink.icon}
               width={20}
               height={20}

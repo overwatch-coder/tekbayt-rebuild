@@ -15,7 +15,6 @@ const TeamSlider = () => {
         >
           {our_team_slide_images.map((item, idx) => (
             <Image
-              placeholder="blur"
               key={idx}
               src={item}
               alt={`slider image ${idx + 1}`}
