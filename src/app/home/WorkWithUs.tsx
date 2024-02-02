@@ -13,8 +13,9 @@ const WorkWithUs = () => {
         data-aos="fade-up"
         className="text-base text-black-80 font-normal md:max-w-3xl"
       >
-        We are team driven these common values that that helps us get amazing
-        result that will boost the speed of your business growth.
+        We are a team united by shared values, guiding principles that empower
+        us to achieve remarkable results, ultimately accelerating the pace of
+        your business growth.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center gap-10 md:gap-20">
