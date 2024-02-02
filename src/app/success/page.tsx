@@ -1,7 +1,7 @@
 "use client";
 import Button from "@/components/shared/Button";
 import { useRouter, useSearchParams } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 
 const Success = () => {
   const searchParams = useSearchParams();
@@ -26,7 +26,7 @@ const Success = () => {
   }
 
   return (
-    <>
+    <Suspense>
       <title>Thank you for contacting us! | Tekabyt</title>
       <meta name="description" content="We will be in touch with you shortly" />
       <section
@@ -53,7 +53,7 @@ const Success = () => {
           />
         </div>
       </section>
-    </>
+    </Suspense>
   );
 };
 
