@@ -79,6 +79,33 @@ const Form = () => {
         </div>
       </div>
 
+      {/* Category */}
+      <div className="flex flex-col gap-5 w-full">
+        <label
+          className="font-medium text-base tracking-wide text-black-80"
+          htmlFor="category"
+        >
+          Category
+        </label>
+
+        <select
+          name="category"
+          className="rounded px-5 py-2 w-full border border-black-60 focus:border-black-80 focus:border-2 valid:border-green-500 valid:border-2"
+          required
+        >
+          <option disabled selected value={""}>
+            Kindly choose one
+          </option>
+          <option value="Design Service">Design Service</option>
+          <option value="Digital Marketing">Digital Marketing</option>
+          <option value="Mobile App / Web Developement">
+            Mobile App / Web Developement
+          </option>
+          <option value="Brand Management">Brand Management</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
       {/* Comment */}
       <div className="flex flex-col gap-5 w-full">
         <label

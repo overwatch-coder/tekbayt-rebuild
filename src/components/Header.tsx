@@ -19,7 +19,7 @@ const Header = () => {
   }, [pathname]);
 
   return (
-    <header className="sticky left-0 top-0 z-50 w-screen shadow-base bg-white mx-auto px-5 md:px-20">
+    <header className="fixed left-0 top-0 z-50 w-screen shadow-base bg-white mx-auto px-5 md:px-20">
       <div className="flex items-center justify-between py-3 md:py-2">
         {/* Logo */}
         <Link href={"/"}>

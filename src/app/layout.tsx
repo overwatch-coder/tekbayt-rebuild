@@ -34,7 +34,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <AosProvider>
           <div className="flex flex-col min-h-screen scrollbar-hide">
             <Header />
-            <main className="mb-auto pt-5 mx-auto w-full">{children}</main>
+            <main className="mb-auto pt-20 mx-auto w-full">{children}</main>
             <Footer />
           </div>
         </AosProvider>
