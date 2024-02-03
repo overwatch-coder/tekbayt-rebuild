@@ -10,7 +10,7 @@ import feranmi from "@/assets/our_team/feranmi.png";
 import lanre from "@/assets/our_team/lanre.png";
 import phina from "@/assets/our_team/phina.png";
 
-import kay_slide from "@/assets/our_team/kay_slide.jpg";
+import kay_slide from "@/assets/our_team/kay_slide.png";
 import blessing_slide from "@/assets/our_team/blessing_slide.png";
 import folashade_slide from "@/assets/our_team/folashade_slide.png";
 import oloyede_slide from "@/assets/our_team/oloyede_slide.png";
@@ -19,7 +19,7 @@ import overwatch_slide from "@/assets/our_team/overwatch_slide.png";
 import andrew_slide from "@/assets/our_team/andrew_slide.png";
 import feranmi_slide from "@/assets/our_team/feranmi_slide.png";
 import lanre_slide from "@/assets/our_team/lanre_slide.png";
-import phina_slide from "@/assets/our_team/phina_slide.jpg";
+import phina_slide from "@/assets/our_team/phina_slide.png";
 
 export const our_team: OurTeamType[] = [
     {
