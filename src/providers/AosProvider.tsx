@@ -20,7 +20,7 @@ const AosProvider = ({ children }: AosProviderProps) => {
     });
   }, []);
 
-  return <>{children}</>;
+  return <div className="overflow-x-hidden">{children}</div>;
 };
 
 export default AosProvider;

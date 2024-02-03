@@ -9,6 +9,10 @@ import landing_page from '@/assets/our_work/LandingPage.png'
 import mavent from '@/assets/our_work/Mavent.png'
 import mcvites from '@/assets/our_work/McVites.png'
 import transfer_app from '@/assets/our_work/TransferApp.png'
+import metakay from '@/assets/our_work/metakay.png'
+import qlikstudios from '@/assets/our_work/qlikstudios.png'
+import etl from '@/assets/our_work/etl.png'
+import drwoy from '@/assets/our_work/drwoy.png'
 
 export const portfolio: PorfolioType[] = [
     {
@@ -70,5 +74,29 @@ export const portfolio: PorfolioType[] = [
         image: transfer_app,
         name: 'Transfer App',
         type: 'Case Study'
+    },
+    {
+        url: 'https://metakay.vercel.app/',
+        image: metakay,
+        name: 'MetaKay',
+        type: 'Website'
+    },
+    {
+        url: 'https://etl.express/',
+        image: etl,
+        name: 'ETL Logistics',
+        type: 'Website'
+    },
+    {
+        url: 'https://qlikstudios.vercel.app/',
+        image: qlikstudios,
+        name: 'Qlik Studios',
+        type: 'Website'
+    },
+    {
+        url: 'https://www.drwoy.com/',
+        image: drwoy,
+        name: 'D Rwoy (Artist Portfolio)',
+        type: 'Website'
     },
 ]

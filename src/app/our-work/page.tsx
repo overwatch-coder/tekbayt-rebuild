@@ -21,16 +21,16 @@ const OurWork = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 place-items-center">
         {portfolio.map((item, idx) => (
           <div data-aos="flip-down" key={idx} className="flex flex-col gap-5">
-            <div className="col-span-1 w-full relative rounded shadow hover:scale-105 transition-transform">
+            <div className="col-span-1 w-full relative rounded-md shadow-md hover:scale-105 transition-transform">
               <Image
                 src={item.image}
                 alt={item.name}
                 width={700}
                 height={700}
-                className="object-cover"
+                className="object-contain"
               />
 
-              <div className="py-3 px-5 flex flex-col gap-3 absolute bottom-0 left-0 w-full bg-gray-80/70">
+              <div className="py-3 px-5 flex flex-col gap-3 absolute bottom-0 left-0 w-full bg-gray-80/80">
                 <h4 className="font-semibold">{item.name}</h4>
                 <p className="text-xs text-black-80">{item.type}</p>
               </div>
@@ -41,7 +41,7 @@ const OurWork = () => {
               target="_blank"
               className="text-black-80 underline hover:text-blue-100 w-fit"
             >
-              Link to Case Study
+              {`Link to ${item.type}`}
             </Link>
           </div>
         ))}
