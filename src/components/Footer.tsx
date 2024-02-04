@@ -57,6 +57,7 @@ const Footer = () => {
               <Link
                 key={idx}
                 href={item.url}
+                target="_blank"
                 className="text-white/70 hover:text-white text-sm"
               >
                 {item.name}
