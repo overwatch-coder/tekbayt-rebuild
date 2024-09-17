@@ -10,22 +10,28 @@ const config: Config = {
     extend: {
       keyframes: {
         fade: {
-          '0%, 100%': { opacity: '0.2', color: "#3180D1" },
-          '50%': { opacity: '1', color: "#EB640A" },
+          "0%, 100%": { opacity: "0.2", color: "#3180D1" },
+          "50%": { opacity: "1", color: "#EB640A" },
         },
         change: {
-          '0%, 100%': { content: 'url("/assets/hero_curve_inactive.png")', transform: 'translateX(0%)' },
-          '50%': { content: 'url("/assets/hero_curve_active.png")', transform: 'translateX(100%)' },
+          "0%, 100%": {
+            content: 'url("/assets/hero_curve_inactive.png")',
+            transform: "translateX(0%)",
+          },
+          "50%": {
+            content: 'url("/assets/hero_curve_active.png")',
+            transform: "translateX(100%)",
+          },
         },
         marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
       animation: {
-        fade: 'fade 2s ease-in-out 1s infinite alternate',
-        change: 'change 2s ease-in-out 1s infinite alternate',
-        marquee: 'marquee 40s linear infinite',
+        fade: "fade 2s ease-in-out 1s infinite alternate",
+        change: "change 2s ease-in-out 1s infinite alternate",
+        marquee: "marquee 40s linear infinite alternate",
       },
       content: {
         image: 'url("/assets/hero_curve_inactive.png")',
@@ -33,10 +39,11 @@ const config: Config = {
       backgroundImage: {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, #3180D1 0deg, #EB640A 180deg, #3180D1 360deg)",
-        "image": "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/footer_bg_1.png')"
+        image:
+          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/footer_bg_1.png')",
       },
       colors: {
-        "white": "#FFFFFF",
+        white: "#FFFFFF",
         "blue-100": "#3180D1",
         "blue-80": "#5A99DA",
         "blue-60": "#83B3E3",
@@ -57,13 +64,12 @@ const config: Config = {
         "gray-60": "#DFDFDF",
         "gray-40": "#EAEAEA",
         "gray-20": "#F4F4F4",
-
       },
       boxShadow: {
-        'base': '0 0.2rem 0.4rem 0 rgba(0,0,0,0.2);',
-      }
+        base: "0 0.2rem 0.4rem 0 rgba(0,0,0,0.2);",
+      },
     },
   },
-  plugins: [require('tailwind-scrollbar-hide')],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
 export default config;

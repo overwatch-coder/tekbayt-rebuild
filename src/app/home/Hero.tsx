@@ -6,7 +6,7 @@ import Button from "@/components/shared/Button";
 
 const Hero = () => {
   return (
-    <section className="px-5 md:px-20 flex flex-col gap-10 items-center md:flex-row md:justify-between pt-5 pb-10">
+    <section className="px-5 md:px-20 flex flex-col gap-10 items-center md:flex-row md:justify-between pt-5 pb-10 md:pb-20">
       <div
         data-aos="fade-right"
         className="flex flex-col gap-5 items-center md:items-start text-center md:text-start"
@@ -38,6 +38,7 @@ const Hero = () => {
           height={800}
           quality={100}
           className="object-cover"
+          priority
         />
 
         <Image
@@ -47,6 +48,7 @@ const Hero = () => {
           width={80}
           height={80}
           quality={100}
+          priority
         />
       </div>
     </section>

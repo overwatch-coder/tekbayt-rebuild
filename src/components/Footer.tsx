@@ -6,7 +6,7 @@ import footer_logo from "@/assets/icons/tekbayt-footer-logo.png";
 const Footer = () => {
   return (
     <footer className="flex flex-col bg-blue-100 px-5 md:px-20 w-screen items-center pt-10 pb-5">
-      <div className="grid grid-cols-1 place-items-baseline mx-auto md:flex md:flex-row md:justify-between md:items-start gap-20 xl:gap-0 w-full">
+      <div className="grid grid-cols-1 place-items-baseline mx-auto md:flex md:flex-row md:justify-between md:items-start gap-20 xl:gap-0 w-full 2xl:max-w-7xl 2xl:mx-auto">
         {/* Logo */}
         <div className="flex flex-col gap-8 items-center">
           <Link href={"/"}>
